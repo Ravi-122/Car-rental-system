@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: limegreen;
+}
+
+</style>
+</head>
+<body>
+<center>
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/aboutus">About Us</a></li>
+  <li><a href="/feedback">Feedback</a></li>
+  {% if user.is_authenticated %}
+  <li><a>Hello, {{user.first_name}}</a></li>
+  <li><a href="/logout">Logout</a></li>
+  {% else %}
+  <li><a href="/login">Login</a></li>
+  <li><a href="/register">Register</a></li>
+  <li><a href="/payments">Payment</a></li>
+  {% endif %}
+</ul>
+</center>
+</body>
+</html>
+
+

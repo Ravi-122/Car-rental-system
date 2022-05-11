@@ -1,0 +1,96 @@
+{% load static%}
+<html lang="en">
+    {% load static %}
+    {% include 'Nav.html' %}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ 
+    footer {
+                text-align: center;
+                padding: 2px;
+                background-color: DarkSalmon;
+                 color: rgba(220, 42, 42, 0.875);
+               }
+
+</style>
+</head>
+<body>
+<center>
+<h2>FEED BACK FORM</h2>
+  </center>
+<div class="contest">
+ 
+  <form>
+    <center style=background-color:gold;>
+      <style>
+        {
+          background-color:gold;
+        }
+      </style>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="email">Mail Id</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+            <option value="none">Select Country</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="russia">Russia</option>
+          <option value="japan">Japan</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="feed_back">Feed Back</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </center>
+  </form>
+</div>
+<buttom>
+  <footer>
+      <p>feed_back</p>
+      <p><a href="https://www.instagram.com/">instagram</a></p>
+      <p><a href="https://www.facebook.com/">facebook</a></p>
+      <p><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">twitter</a></p>
+    </footer>
+  </buttom>
+
+</body>
+</html>
